@@ -28,7 +28,7 @@ var radiologia = [
 
 var primera1 = [];
 for (var i = 0; i < radiologia.length; i++){
-    primera1.push(' <strong>Primera atencion Radiología :</strong>'+radiologia[i].PACIENTE+' - '+radiologia[i].PREVISION);
+    primera1.push(' <hr><strong>Primera atencion Radiología :</strong>'+radiologia[i].PACIENTE+' - '+radiologia[i].PREVISION);
 }
 document.write(primera1[0]);
 
@@ -38,7 +38,7 @@ for (var i = 0; i < radiologia.length; i++){
 }
 document.write(ultima1[4]);
 
-document.write('<br>'+'Cantidad de atenciones para Radiología : '+radiologia.length+'<br>');
+document.write('<br>'+'<strong>Cantidad de atenciones para Radiología :</strong>'+radiologia.length+'<br>');
 
 var traumatologia = [
     {HORA: '08:00', 
@@ -78,20 +78,22 @@ var traumatologia = [
     PREVISION: 'ISAPRE'}
 ];
 
+
+
 var primera2 = [];
 for (var i = 0; i < traumatologia.length; i++){
-    primera2.push('<br>'+'Primera atencion Traumatologia : '+(traumatologia[i].PACIENTE)+' - '+traumatologia[i].PREVISION);
+    primera2.push('<hr>'+'<strong>Primera atencion Traumatologia :</strong>'+(traumatologia[i].PACIENTE)+' - '+traumatologia[i].PREVISION);
 }
 document.write(primera2[0]);
 
 
 var ultima2 = [];
 for (var i = 0; i < traumatologia.length; i++){
-    ultima2.push(' | Ultima atencion Traumatologia : '+traumatologia[i].PACIENTE+' - '+traumatologia[i].PREVISION+'<br>');
+    ultima2.push(' | <strong>Ultima atencion Traumatologia :</strong>'+traumatologia[i].PACIENTE+' - '+traumatologia[i].PREVISION+'<br>');
 }
 document.write(ultima2[6]);
 
-document.write('<br>'+'Cantidad de atenciones para Traumatología : '+traumatologia.length+'<br>');
+document.write('<br>'+'<strong>Cantidad de atenciones para Traumatología :</strong>'+traumatologia.length+'<br>');
 
 var dental = [
     {HORA: '08:30', 
@@ -128,14 +130,14 @@ var dental = [
 
 var primera3 = [];
 for (var i = 0; i < dental.length; i++){
-    primera3.push('<br>'+'Primera atencion Dental : '+(dental[i].PACIENTE)+' - '+dental[i].PREVISION);
+    primera3.push('<hr>'+'<strong>Primera atencion Dental :</strong>'+(dental[i].PACIENTE)+' - '+dental[i].PREVISION);
 }
 document.write(primera3[0]);
 
 var ultima3 = [];
 for (var i = 0; i < dental.length; i++){
-    ultima3.push(' | Ultima atencion Dental : '+dental[i].PACIENTE+' - '+dental[i].PREVISION+'<br>');
+    ultima3.push(' | <strong>Ultima atencion Dental :</strong>'+dental[i].PACIENTE+' - '+dental[i].PREVISION+'<br>');
 }
 document.write(ultima3[5]);
 
-document.write('<br>'+'Cantidad de atenciones para Dental : '+dental.length+'<br>');
+document.write('<br>'+'<strong>Cantidad de atenciones para Dental :</strong>'+dental.length+'<br>');
