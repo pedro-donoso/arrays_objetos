@@ -1,7 +1,7 @@
 var radiologia = [
     {HORA: '11:00', 
     ESPECIALISTA: 'IGNACIO SCHULZ', 
-    PACIENTE: 'FRANCISCA ROJAS', 
+    PACIENTE: 'JUAN PEREZ', 
     RUT: '9878782-1', 
     PREVISION: 'FONASA'},
     {HORA: '11:30', 
@@ -21,20 +21,20 @@ var radiologia = [
     PREVISION: 'FONASA'},
     {HORA: '16:00', 
     ESPECIALISTA: 'PATRICIA SUAZO', 
-    PACIENTE: 'RAMON ULLOA', 
+    PACIENTE: 'ANA GALVEZ', 
     RUT: '14989389-K', 
-    PREVISION: 'FONASA'}
+    PREVISION: 'ISAPRE'}
 ];
 
 var primera1 = [];
 for (var i = 0; i < radiologia.length; i++){
-    primera1.push(' Primera atencion Radiología : '+radiologia[i].PACIENTE+' - '+radiologia[i].PREVISION);
+    primera1.push(' <strong>Primera atencion Radiología :</strong>'+radiologia[i].PACIENTE+' - '+radiologia[i].PREVISION);
 }
 document.write(primera1[0]);
 
 var ultima1 = [];
 for (var i = 0; i < radiologia.length; i++){
-    ultima1.push(' | Ultima atencion Radiología : '+radiologia[i].PACIENTE+' - '+radiologia[i].PREVISION+'<br>');
+    ultima1.push(' | <strong>Ultima atencion Radiología :</strong>'+radiologia[i].PACIENTE+' - '+radiologia[i].PREVISION+'<br>');
 }
 document.write(ultima1[4]);
 
